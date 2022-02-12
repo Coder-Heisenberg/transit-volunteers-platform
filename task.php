@@ -53,6 +53,8 @@
                 <td><?php echo $row['tasksDropoff']; ?></td>
                 
                 <td>
+
+                    <a href="selectVolunteerstoTask.php?taskID=<?php echo $row['tasksID']; ?>" style="color:#35f235;" >Select Volunteer</a>
                     <a href="edittask.php?updatingID=<?php echo $row['tasksID']; ?>" style="color:#EAAA00;" >Edit</a>
                     <a href="deletetask.php?deleteingID=<?php echo $row['tasksID']; ?>" onclick="return confirm('Are you sure you want to delete this task?');" style="color:red;">Delete</a>
                 </td>
